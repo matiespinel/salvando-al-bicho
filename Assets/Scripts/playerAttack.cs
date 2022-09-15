@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
-    public float timeBtwAttack;
+    public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
 
     public Transform attackPos;
@@ -14,21 +14,22 @@ public class playerAttack : MonoBehaviour
 
     void Update()
     {
-        if (true)
+        if (timeBtwAttack <= 0)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                Debug.Log("ataque");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<enemyDeath>().TakeDamage(damage);
                 }
-                timeBtwAttack = startTimeBtWAttack;
+                timeBtwAttack = 1;
             } 
-            else
-            {
+        }
+        else if (timeBtwAttack > 0)
+        {
                 timeBtwAttack -= Time.deltaTime;
-            }
         }
     }
 
