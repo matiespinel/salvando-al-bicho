@@ -16,13 +16,13 @@ public class activarLaserTorre : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 3f && estadoTorre == false)
+        if (timer >= 2f && estadoTorre == false)
         {
             laserTorre.SetActive(true);
             timer = 0;
             estadoTorre = true;
         } 
-        else if(timer >= 3f && estadoTorre == true) 
+        else if(timer >= 2f && estadoTorre == true) 
         {
             laserTorre.SetActive(false);
             timer = 0;
