@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class activarLaserTorre : MonoBehaviour
 {
-    
+    float timer = 0;
     public GameObject laserTorre;
+    bool estadoTorre = false;
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.J))
-        {
-            laserTorre.SetActive(false);
-        }
-        
-        if(Input.GetKeyDown(KeyCode.K))
+        timer += Time.deltaTime;
+        if (timer >= 3f && estadoTorre == false)
         {
             laserTorre.SetActive(true);
+            timer = 0;
+            estadoTorre = true;
+        } 
+        else if(timer >= 3f && estadoTorre == true) 
+        {
+            laserTorre.SetActive(false);
+            timer = 0;
+            estadoTorre = false;
         }
-        
     }
 }
