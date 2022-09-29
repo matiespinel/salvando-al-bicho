@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     bool canJump; 
 
+    public float timeBtwAttack = 0;
+    public float startTimeBtWAttack;
+
    // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,20 @@ public class PlayerController : MonoBehaviour
         {
             canJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 220f));
+        }
+
+        if (timeBtwAttack <= 0)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(400f, 0));
+                timeBtwAttack = 1;
+            } 
+        }
+        
+        else if (timeBtwAttack > 0)
+        {
+                timeBtwAttack -= Time.deltaTime;
         }
     }
 
