@@ -1,10 +1,13 @@
-using UnityEngine;
+ using System.Collections;
+ using System.Collections.Generic;
+ using UnityEngine;
+
 
 public class PlayerController : MonoBehaviour
 {
-    bool canJump;  
+    bool canJump; 
 
-    // Start is called before the first frame update
+   // Start is called before the first frame update
     void Start()
     {
         
@@ -37,6 +40,4 @@ public class PlayerController : MonoBehaviour
             canJump = true;
         }
     }
-
-
 }

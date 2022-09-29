@@ -101,6 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9af64b4559b3947a3e6a04edf3d258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 2998251558458819401}
+  groundCheck: {fileID: 2998251558458819403}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  tr: {fileID: 6482970251559417923}
 --- !u!50 &2998251558458819401
 Rigidbody2D:
   serializedVersion: 4
