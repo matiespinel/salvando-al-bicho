@@ -18,6 +18,7 @@ public class Damage : MonoBehaviour
         void Damage()
         {
             _health.playerHealth = _health.playerHealth - damage;
+
         }
     }
     

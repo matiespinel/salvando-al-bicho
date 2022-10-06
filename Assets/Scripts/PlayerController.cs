@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
     SpriteRenderer sr;
-   // Start is called before the first frame update
+    
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
