@@ -9,8 +9,11 @@ public class PlayerController : MonoBehaviour
 
     public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
-    SpriteRenderer sr;
     
+    SpriteRenderer sr;
+    //si esta en true, esta mirando a la derecha
+    //si esta en false, esta mirando a la izquierda
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();

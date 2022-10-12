@@ -12,6 +12,15 @@ public class playerAttack : MonoBehaviour
     public float attackRange;
     public int damage;
 
+    SpriteRenderer sr;    
+    //si esta en true, esta mirando a la derecha
+    //si esta en false, esta mirando a la izquierda
+
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         if (timeBtwAttack <= 0)
