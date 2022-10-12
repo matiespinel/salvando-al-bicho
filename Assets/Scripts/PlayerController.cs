@@ -60,6 +60,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void girar()
+    {
+        // sr.flipX = false;
+        // Vector3 escala = transform.localScale;
+        // escala.x *= -1;
+        // transform.localScale = escala;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "ground")
