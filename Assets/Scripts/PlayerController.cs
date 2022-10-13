@@ -5,11 +5,11 @@
 
 public class PlayerController : MonoBehaviour
 {
-    bool canJump; 
+    bool canJump;
 
     public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
-    
+
     SpriteRenderer sr;
     //si esta en true, esta mirando a la derecha
     //si esta en false, esta mirando a la izquierda
@@ -46,12 +46,12 @@ public class PlayerController : MonoBehaviour
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0));
                 timeBtwAttack = 1;
-            } 
+            }
             if (Input.GetKeyDown(KeyCode.LeftShift) && sr.flipX == false)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(400f, 0));
                 timeBtwAttack = 1;
-            } 
+            }
         }
 
         else if (timeBtwAttack > 0)
@@ -62,10 +62,10 @@ public class PlayerController : MonoBehaviour
 
     private void girar()
     {
-        // sr.flipX = false;
-        // Vector3 escala = transform.localScale;
-        // escala.x *= -1;
-        // transform.localScale = escala;
+        sr.flipX = false;
+        Vector3 escala = transform.localScale;
+        escala.x *= -1;
+        transform.localScale = escala;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
