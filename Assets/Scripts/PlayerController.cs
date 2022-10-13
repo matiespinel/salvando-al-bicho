@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
     public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
 
+    bool mirandoDerecha;
+
     SpriteRenderer sr;
-    //si esta en true, esta mirando a la derecha
-    //si esta en false, esta mirando a la izquierda
 
     void Start()
     {
@@ -25,13 +25,15 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey("a"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-800f * Time.deltaTime, 0));
-            sr.flipX = true;
+            mirandoDerecha = false;
+            transform.localScale = new Vector3 (-1, 1, 1);
         }
 
         if (Input.GetKey("d"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(800f * Time.deltaTime, 0));
-            sr.flipX = false;
+            mirandoDerecha = true;
+            transform.localScale = new Vector3 (1, 1, 1);
         }
 
         if (Input.GetKeyDown("space") && canJump == true)
@@ -42,12 +44,12 @@ public class PlayerController : MonoBehaviour
 
         if (timeBtwAttack <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && sr.flipX == true)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == false)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0));
                 timeBtwAttack = 1;
             }
-            if (Input.GetKeyDown(KeyCode.LeftShift) && sr.flipX == false)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == true)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(400f, 0));
                 timeBtwAttack = 1;
