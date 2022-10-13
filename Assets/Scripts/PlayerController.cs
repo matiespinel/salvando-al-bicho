@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             sr.flipX = false;
         }
 
-        if (Input.GetKeyDown("space") && canJump)
+        if (Input.GetKeyDown("space") && canJump == true)
         {
             canJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 220f));
