@@ -41,19 +41,19 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space") && canJump == true)
         {
             canJump = false;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 220f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 260f));
         }
 
         if (timeBtwAttack <= 0)
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == false)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0));
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0));
                 timeBtwAttack = 1;
             }
             if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == true)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(400f, 0));
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(200f, 0));
                 timeBtwAttack = 1;
             }
         }
