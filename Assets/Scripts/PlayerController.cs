@@ -11,12 +11,14 @@ public class PlayerController : MonoBehaviour
     public float startTimeBtWAttack;
 
     bool mirandoDerecha;
+    v3 startScale;
 
     SpriteRenderer sr;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        startScale = transform.localScale;
     }
 
     // Update is called once per frame
@@ -26,14 +28,14 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-800f * Time.deltaTime, 0));
             mirandoDerecha = false;
-            transform.localScale = new Vector3 (-1, 1, 1);
+            transform.localScale = new Vector3 (-startScale.x, localScale.y, localScale.z);
         }
 
         if (Input.GetKey("d"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(800f * Time.deltaTime, 0));
             mirandoDerecha = true;
-            transform.localScale = new Vector3 (1, 1, 1);
+            transform.localScale = new Vector3 (startScale.x, localScale.y, localScale.z);
         }
 
         if (Input.GetKeyDown("space") && canJump == true)
