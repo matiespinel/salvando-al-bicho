@@ -11,14 +11,18 @@ public class PlayerController : MonoBehaviour
     public float startTimeBtWAttack;
 
     bool mirandoDerecha;
+
     Vector3 startScale;
 
     SpriteRenderer sr;
+
+    private Animator animator;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         startScale = transform.localScale;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,14 +32,19 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-800f * Time.deltaTime, 0));
             mirandoDerecha = false;
+            animator.SetBool("isRunning", true);
             transform.localScale = new Vector3 (-startScale.x, transform.localScale.y, transform.localScale.z);
         }
-
-        if (Input.GetKey("d"))
+        else if (Input.GetKey("d"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(800f * Time.deltaTime, 0));
             mirandoDerecha = true;
+            animator.SetBool("isRunning", true);
             transform.localScale = new Vector3 (startScale.x, transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
 
         if (Input.GetKeyDown("space") && canJump == true)
