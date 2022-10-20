@@ -31,6 +31,7 @@ public class playerAttack : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<enemyDeath>().TakeDamage(damage);
+                    HitStop(.3f);
                 }
                 timeBtwAttack = 1;
             } 
@@ -45,5 +46,17 @@ public class playerAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    }
+
+    public void HitStop (float TimeStopped)
+    {
+        StartCoroutine(HitStopCoroutine(TimeStopped));
+    }
+
+    IEnumerator HitStopCoroutine (float TimeStopped)
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime (TimeStopped);
+        Time.timeScale = 1f;
     }
 }
