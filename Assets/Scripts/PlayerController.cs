@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-400f, 0));
                 timeBtwAttack = 1;
             }
+            
             if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == true)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(400f, 0));
