@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class cosaspinchudas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   [SerializeField] private int damage;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private Health _health;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            Damage();
+        }
+
+        void Damage()
+        {
+            _health.playerHealth = _health.playerHealth - damage;
+
+        }
     }
 }
