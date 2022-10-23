@@ -158,6 +158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2998251558458819400, guid: 354887cf7eb3797469d2f92aa0d639aa,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998251558458819400, guid: 354887cf7eb3797469d2f92aa0d639aa,
+        type: 3}
       propertyPath: timeBtwAttack
       value: 3
       objectReference: {fileID: 0}
@@ -397,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   _health: {fileID: 57632360}
 --- !u!60 &87632364
 PolygonCollider2D:
@@ -893,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   _health: {fileID: 57632360}
 --- !u!60 &373862850
 PolygonCollider2D:
@@ -1026,7 +1031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   _health: {fileID: 57632360}
 --- !u!60 &423974377
 PolygonCollider2D:
@@ -1243,7 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   _health: {fileID: 57632360}
 --- !u!60 &459091975
 PolygonCollider2D:
@@ -47981,7 +47986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   _health: {fileID: 57632360}
 --- !u!60 &2001591284
 PolygonCollider2D:
