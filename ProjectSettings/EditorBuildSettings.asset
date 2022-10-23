@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/escenas/seleccionniveles.2.unity
     guid: a0dbbd2c28ef90a42a7ed700b2d5907f
-  - enabled: 0
-    path: Assets/escenas/Escenas no usadas/seleccion-de-niveles.unity
-    guid: d9018c50d4c56e44f833eb40e73cb89b
   - enabled: 1
     path: Assets/escenas/escena juego.v.unity
     guid: 358399ece5ee7ec408a51f9102e5d20d
