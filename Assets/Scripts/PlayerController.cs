@@ -30,14 +30,14 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey("a"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-150f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-350f * Time.deltaTime, 0));
             mirandoDerecha = false;
             animator.SetBool("isRunning", true);
             transform.localScale = new Vector3 (-startScale.x, transform.localScale.y, transform.localScale.z);
         }
         else if (Input.GetKey("d"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(150f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(350f * Time.deltaTime, 0));
             mirandoDerecha = true;
             animator.SetBool("isRunning", true);
             transform.localScale = new Vector3 (startScale.x, transform.localScale.y, transform.localScale.z);
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space") && canJump == true)
         {
             canJump = false;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 70f));
         }
 
         if (timeBtwAttack <= 0)
