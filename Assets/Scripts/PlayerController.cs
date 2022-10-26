@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space") && canJump == true)
         {
             canJump = false;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 10f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 5f));
         }
 
         if (timeBtwAttack <= 0)
