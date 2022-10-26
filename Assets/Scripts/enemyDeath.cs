@@ -18,6 +18,6 @@ public class enemyDeath : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Destroy(GameObject);
+        Destroy(gameObject);
     }
 }

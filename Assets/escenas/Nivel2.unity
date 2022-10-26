@@ -210,7 +210,7 @@ PrefabInstance:
     - target: {fileID: 2998251558458819403, guid: 354887cf7eb3797469d2f92aa0d639aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.1866
+      value: -13.82
       objectReference: {fileID: 0}
     - target: {fileID: 2998251558458819403, guid: 354887cf7eb3797469d2f92aa0d639aa,
         type: 3}
@@ -1071,7 +1071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184432725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -1.04, z: -1}
+  m_LocalPosition: {x: -23.86, y: -1.04, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1953,11 +1953,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489975569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.4, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: 2.8278475, y: -16.45, z: 0}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1750180079}
+  m_Father: {fileID: 678944396}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564511988
@@ -2385,6 +2385,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &678944395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678944396}
+  m_Layer: 0
+  m_Name: Caminos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678944396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678944395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.727849, y: 12.527863, z: 0.21235436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 489975570}
+  - {fileID: 1942023658}
+  - {fileID: 1483915571}
+  - {fileID: 1152628868}
+  - {fileID: 1001043463}
+  - {fileID: 2016048764}
+  - {fileID: 1475962012}
+  - {fileID: 794429328}
+  - {fileID: 1646537973}
+  - {fileID: 1444883564}
+  - {fileID: 1899052371}
+  - {fileID: 1540545596}
+  - {fileID: 1054952922}
+  - {fileID: 1308446362}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680766357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,7 +2599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794429328}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: camino2i
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2568,12 +2613,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794429327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.87, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: 1.7078485, y: -2.337862, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1461881865}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820248523
 GameObject:
@@ -59134,7 +59179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001043463}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2f
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59148,12 +59193,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001043462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.85, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: 9.59785, y: -2.5378628, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1129620465}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022208389
 GameObject:
@@ -59289,7 +59334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054952922}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2n
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59303,12 +59348,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054952921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.83, y: -0.58, z: -2.44761}
+  m_LocalPosition: {x: -9.722152, y: 25.422134, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1352179548}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1082533445
 GameObject:
@@ -59884,7 +59929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152628868}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: camino2d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59898,12 +59943,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152628867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: 9.797849, y: -16.577862, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1246180635}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1246180634
 PrefabInstance:
@@ -60176,7 +60221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308446362}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: "camino2\xF1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60190,12 +60235,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308446361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.49, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: -18.042152, y: 25.462135, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1352179548}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337474547
 GameObject:
@@ -60721,7 +60766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444883564}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: camino2k
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60735,12 +60780,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444883563}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.63, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: -1.1221495, y: 4.332136, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 116692997}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1461881864
 PrefabInstance:
@@ -60985,7 +61030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475962012}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2h
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60999,12 +61044,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475962011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.86, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: -2.062152, y: -2.2378616, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1461881865}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483915570
 GameObject:
@@ -61016,7 +61061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483915571}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61030,12 +61075,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483915570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.87, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: 12.647847, y: -16.557861, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1246180635}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1485467009
 GameObject:
@@ -61164,7 +61209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540545596}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: camino2m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61178,12 +61223,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540545595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: 3.8478498, y: 14.382137, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2025727109}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543244063
 GameObject:
@@ -61429,7 +61474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646537973}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61443,12 +61488,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646537972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.53, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: 7.0378504, y: 4.3521366, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 116692997}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651065580
 GameObject:
@@ -61977,7 +62022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899052371}
   m_Layer: 0
-  m_Name: camino2a
+  m_Name: camino2l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61991,12 +62036,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899052370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.43, y: -0.52, z: -2.44761}
+  m_LocalPosition: {x: 11.60785, y: 14.402138, z: -2.6599643}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2025727109}
-  m_RootOrder: 0
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906828742
 GameObject:
@@ -62190,11 +62235,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942023657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.61, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: -10.182151, y: -16.45, z: 0}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1750180079}
+  m_Father: {fileID: 678944396}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1953542721
@@ -62423,7 +62468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016048764}
   m_Layer: 0
-  m_Name: camino2b
+  m_Name: camino2g
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62437,12 +62482,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016048763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.75, y: -0.54, z: -1.8677144}
+  m_LocalPosition: {x: 3.9978495, y: -2.5578632, z: -2.0800688}
   m_LocalScale: {x: 0.13497834, y: 0.10362426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1129620465}
-  m_RootOrder: 1
+  m_Father: {fileID: 678944396}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2025727108
 PrefabInstance:
