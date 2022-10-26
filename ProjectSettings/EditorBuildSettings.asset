@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/escenas/Nivel2.unity
     guid: 29c810350b0afdd41a8d0581a868c037
   - enabled: 1
+    path: Assets/escenas/selccionnivelesutlimo.unity
+    guid: d1e95a58c2923c9479b9681623f8048b
+  - enabled: 1
     path: Assets/escenas/Nivel3Boss.unity
     guid: 800247a32c4cb47498b8376addab0c87
   m_configObjects: {}

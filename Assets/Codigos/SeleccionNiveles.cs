@@ -13,9 +13,12 @@ public class SeleccionNiveles : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-   
-    
-   
+
+
+    public void nivelanteriores()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
 
     public void Back()
     {
