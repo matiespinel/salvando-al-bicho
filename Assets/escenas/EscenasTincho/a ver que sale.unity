@@ -217,7 +217,7 @@ PrefabInstance:
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: wayPoints.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
@@ -329,7 +329,7 @@ PrefabInstance:
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: wayPoints.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
@@ -479,11 +479,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigos:
+  - {fileID: 1023853346}
   - {fileID: 1588694132}
   - {fileID: 2058253292}
   - {fileID: 578384542}
   - {fileID: 1156084262}
   - {fileID: 468183959}
+  waveCount: 0
+  maxWaveCount: 3
 --- !u!4 &1093654213
 Transform:
   m_ObjectHideFlags: 0
@@ -509,7 +512,7 @@ PrefabInstance:
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: wayPoints.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
@@ -746,7 +749,7 @@ PrefabInstance:
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: wayPoints.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
@@ -889,7 +892,7 @@ PrefabInstance:
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: wayPoints.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2079099748628977113, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}

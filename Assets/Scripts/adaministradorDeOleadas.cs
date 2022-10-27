@@ -5,7 +5,8 @@ using UnityEngine;
 public class adaministradorDeOleadas : MonoBehaviour
 {
     public GameObject[] enemigos;
-    public int enemiDefeatedCount = 0;
+    public int waveCount = 0;
+    public int maxWaveCount = 3;
 
     public void ActivateAllEnemies()
     {
@@ -24,7 +25,15 @@ public class adaministradorDeOleadas : MonoBehaviour
     {
         if (GetDefeatedEnemiesCount() == enemigos.Length)
         {
-            ActivateAllEnemies();
+            if(waveCount < maxWaveCount -1)
+            {
+                waveCount++;
+                ActivateAllEnemies();
+            }
+            else 
+            {
+                //termina el juego
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.P))
