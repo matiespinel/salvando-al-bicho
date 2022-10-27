@@ -7,7 +7,7 @@ public class enemyMovement : MonoBehaviour
 {
 
     [SerializeField] List<Transform> wayPoints;
-    float velocidad = 1;
+    float velocidad = 30;
     float distanciaCambio = 0.2f;
     byte siguientePosicion = 0;
 
