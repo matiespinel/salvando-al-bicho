@@ -9,7 +9,7 @@ public class enemyMovement : MonoBehaviour
     [SerializeField] List<Transform> wayPoints;
     float velocidad = 30;
     float distanciaCambio = 0.2f;
-    byte siguientePosicion = 0;
+    byte siguientePosicion = 0; 
 
     // Start is called before the first frame update
     void Start()
