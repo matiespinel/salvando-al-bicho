@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/escenas/Nivel3Boss.unity
     guid: 800247a32c4cb47498b8376addab0c87
+  - enabled: 1
+    path: Assets/escenas/GanasteHDP.unity
+    guid: 1a3dbf53b2bf5ae459e5df7b0f197e4d
   m_configObjects: {}
