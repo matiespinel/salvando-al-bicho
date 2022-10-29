@@ -20,7 +20,8 @@ public class enemyDeath : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        gameObject.GetComponent<enemyDeath>().isDead = true;
     }
 
     void OnEnable()
