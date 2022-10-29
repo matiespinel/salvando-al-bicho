@@ -342,6 +342,7 @@ MonoBehaviour:
   - {fileID: 1101456256}
   waveCount: 0
   maxWaveCount: 3
+  laserTorre: {fileID: 799374147}
 --- !u!1 &147298200
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +933,12 @@ Transform:
   m_Father: {fileID: 47687785}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &799374147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7776586501227411877, guid: 4d50a4c887e3ad947967da1cdeecd071,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492996503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &951486478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,12 +1858,12 @@ PrefabInstance:
     - target: {fileID: 7776586501227411878, guid: 4d50a4c887e3ad947967da1cdeecd071,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.2
+      value: 104.3
       objectReference: {fileID: 0}
     - target: {fileID: 7776586501227411878, guid: 4d50a4c887e3ad947967da1cdeecd071,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 842.7
+      value: 838.2
       objectReference: {fileID: 0}
     - target: {fileID: 7776586501227411878, guid: 4d50a4c887e3ad947967da1cdeecd071,
         type: 3}
@@ -2698,6 +2705,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 537202812196383836, guid: fd766a68365c494418495e8ec2c76549,
+        type: 3}
+      propertyPath: admOleadas
+      value: 
+      objectReference: {fileID: 62727427}
+    - target: {fileID: 537202812196383836, guid: fd766a68365c494418495e8ec2c76549,
+        type: 3}
+      propertyPath: laserTorre
+      value: 
+      objectReference: {fileID: 799374147}
     - target: {fileID: 846359391808615081, guid: fd766a68365c494418495e8ec2c76549,
         type: 3}
       propertyPath: m_Name
@@ -2711,12 +2728,12 @@ PrefabInstance:
     - target: {fileID: 846359391808615082, guid: fd766a68365c494418495e8ec2c76549,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.1
+      value: 145.8
       objectReference: {fileID: 0}
     - target: {fileID: 846359391808615082, guid: fd766a68365c494418495e8ec2c76549,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 787.5
+      value: 839.1
       objectReference: {fileID: 0}
     - target: {fileID: 846359391808615082, guid: fd766a68365c494418495e8ec2c76549,
         type: 3}

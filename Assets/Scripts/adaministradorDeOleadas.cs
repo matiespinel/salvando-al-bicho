@@ -1,3 +1,4 @@
+using System.Net.NetworkInformation;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class adaministradorDeOleadas : MonoBehaviour
     public GameObject[] enemigos;
     public int waveCount = 0;
     public int maxWaveCount = 3;
+    public GameObject laserTorre;
+    bool estadoTorre = true;
+    
 
     public void ActivateAllEnemies()
     {
@@ -25,10 +29,11 @@ public class adaministradorDeOleadas : MonoBehaviour
     {
         if (GetDefeatedEnemiesCount() == enemigos.Length)
         {
-            if(waveCount < maxWaveCount -1)
+            if(waveCount < maxWaveCount)
             {
                 waveCount++;
-                ActivateAllEnemies();
+                laserTorre.SetActive(false);
+                estadoTorre = false;
             }
             else 
             {
@@ -36,10 +41,6 @@ public class adaministradorDeOleadas : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            ActivateAllEnemies();
-        }
     }
 
     int GetDefeatedEnemiesCount()
@@ -55,4 +56,5 @@ public class adaministradorDeOleadas : MonoBehaviour
         }
         return count;
     }
+
 }

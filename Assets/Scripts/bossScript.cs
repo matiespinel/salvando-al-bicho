@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class bossScript : MonoBehaviour
 {
+    public adaministradorDeOleadas admOleadas;
     int vidaBoss = 3; 
+    public GameObject laserTorre;
+    bool estadoTorre = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +24,13 @@ public class bossScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         vidaBoss--;
-        if (vidaBoss <= 0)
+        if (vidaBoss <= 1)
         {
             Destroy(gameObject);
         }
+
+        laserTorre.SetActive(true);
+        estadoTorre = true;
+        admOleadas.ActivateAllEnemies();
     }
 }
