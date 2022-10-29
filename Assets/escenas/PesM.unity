@@ -833,6 +833,7 @@ GameObject:
   - component: {fileID: 844054159}
   - component: {fileID: 844054158}
   - component: {fileID: 844054161}
+  - component: {fileID: 844054162}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1002,6 +1003,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &844054162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844054157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712d84391abcf614eaf26a0616a252b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &881310706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2745,41 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 844054162}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: musicconttrol, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378354119484646525, guid: 3d713ad0e82ca0847952be00c234ba76,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3378354119680885988, guid: 3d713ad0e82ca0847952be00c234ba76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2983,5 +3031,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3284742407766647110, guid: 3d713ad0e82ca0847952be00c234ba76, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3d713ad0e82ca0847952be00c234ba76, type: 3}
