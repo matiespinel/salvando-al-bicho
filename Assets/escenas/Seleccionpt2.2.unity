@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -402, y: -42}
+  m_AnchoredPosition: {x: -402, y: -83}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724212721
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LA MISION CONTINUA
+  m_text: LOS PROBLEMAS ESCALAN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a974e1da23509044191db6ad9fdf7ca0, type: 2}
   m_sharedMaterial: {fileID: 21837232614598668, guid: a974e1da23509044191db6ad9fdf7ca0,
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 384.5682, y: 30.902817, z: -448.4076, w: 0}
+  m_margin: {x: 335.87384, y: 30.902817, z: -448.4076, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -805,8 +805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49270833, y: 0.7415926}
   m_AnchorMax: {x: 0.49270833, y: 0.7415926}
-  m_AnchoredPosition: {x: 1.4874992, y: -172}
-  m_SizeDelta: {x: 185.0248, y: 140.1092}
+  m_AnchoredPosition: {x: 13, y: -181}
+  m_SizeDelta: {x: 130.0153, y: 98.4535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169713511
 MonoBehaviour:
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a715748dd514854ab9acc764ca64d61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 484110b098eb81c4c82f205632aeec8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
