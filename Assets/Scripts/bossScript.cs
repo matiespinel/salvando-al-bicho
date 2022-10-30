@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class bossScript : MonoBehaviour
 {
     public adaministradorDeOleadas admOleadas;
@@ -24,9 +24,10 @@ public class bossScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         vidaBoss--;
-        if (vidaBoss <= 1)
+        if (vidaBoss <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         }
 
         laserTorre.SetActive(true);
