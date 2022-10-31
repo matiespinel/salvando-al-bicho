@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class bossScript : MonoBehaviour
 {
-    private new Vector2 posInicial;
     public GameObject player;
     public adaministradorDeOleadas admOleadas;
     int vidaBoss = 3; 
@@ -23,7 +22,7 @@ public class bossScript : MonoBehaviour
         laserTorre.SetActive(true);
         estadoTorre = true;
         admOleadas.ActivateAllEnemies();
-        player.transform.position = new Vector2(-374, 793);;
+        player.transform.position = new Vector2(410.9932f, -88.1f);;
 
     }
 }
