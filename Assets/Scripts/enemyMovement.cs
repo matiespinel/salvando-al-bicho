@@ -11,16 +11,12 @@ public class enemyMovement : MonoBehaviour
     float velocidad = 30;
     float distanciaCambio = 0.2f;
     byte siguientePosicion = 0; 
-    SpriteRenderer sr;
-    public bool flipX;
-    Vector3 startScale;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        startScale = transform.localScale;
+        
     }
 
     // Update is called once per frame
@@ -30,8 +26,6 @@ public class enemyMovement : MonoBehaviour
             transform.position,
             wayPoints[siguientePosicion].transform.position,
             velocidad * Time.deltaTime);
-
-            Transform.LocalScale = localScale * (-1, 1, 1);
             
 
         if (Vector3.Distance(transform.position,
