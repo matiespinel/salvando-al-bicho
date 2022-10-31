@@ -1,4 +1,3 @@
-using System.Threading.Tasks.Dataflow;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +10,6 @@ public class enemyMovement : MonoBehaviour
     float velocidad = 30;
     float distanciaCambio = 0.2f;
     byte siguientePosicion = 0; 
-
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +35,6 @@ public class enemyMovement : MonoBehaviour
                     siguientePosicion = 0;
                 }
             }
-            
     }
 
 }
