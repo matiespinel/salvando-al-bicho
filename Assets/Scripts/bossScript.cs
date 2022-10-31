@@ -4,22 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class bossScript : MonoBehaviour
 {
+    private new Vector2 posInicial;
+    public GameObject player;
     public adaministradorDeOleadas admOleadas;
     int vidaBoss = 3; 
     public GameObject laserTorre;
     bool estadoTorre = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void TakeDamage(int damage)
     {
@@ -33,5 +23,7 @@ public class bossScript : MonoBehaviour
         laserTorre.SetActive(true);
         estadoTorre = true;
         admOleadas.ActivateAllEnemies();
+        player.transform.position = new Vector2(-374, 793);;
+
     }
 }

@@ -9,7 +9,7 @@ public class adaministradorDeOleadas : MonoBehaviour
     public int waveCount = 0;
     public int maxWaveCount = 3;
     public GameObject laserTorre;
-    bool estadoTorre = true;
+
     
 
     public void ActivateAllEnemies()
@@ -33,7 +33,6 @@ public class adaministradorDeOleadas : MonoBehaviour
             {
                 waveCount++;
                 laserTorre.SetActive(false);
-                estadoTorre = false;
             }
             else 
             {
