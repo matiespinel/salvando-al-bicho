@@ -18,6 +18,8 @@ public class adaministradorDeOleadas : MonoBehaviour
         {
             enemigos[i].SetActive(true);
         }
+        laserTorre.SetActive(true);
+        waveCount = 0;
     }
     
     void Start()
