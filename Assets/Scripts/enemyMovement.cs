@@ -14,7 +14,7 @@ public class enemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform. localScale = new Vector2 (transform. localScale. x * -1 ,transform. localScale.y);
     }
 
     // Update is called once per frame
@@ -24,12 +24,13 @@ public class enemyMovement : MonoBehaviour
             transform.position,
             wayPoints[siguientePosicion].transform.position,
             velocidad * Time.deltaTime);
-            
 
         if (Vector3.Distance(transform.position,
             wayPoints[siguientePosicion].transform.position) < distanciaCambio){
                 
                 siguientePosicion++;
+
+                transform. localScale = new Vector2 (transform. localScale. x * -1 ,transform. localScale.y);
                 
                 if (siguientePosicion >= wayPoints.Count){
                     siguientePosicion = 0;
