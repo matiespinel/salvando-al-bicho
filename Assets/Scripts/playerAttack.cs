@@ -6,12 +6,11 @@ public class playerAttack : MonoBehaviour
 {
     public float timeBtwAttack = 0;
     public float startTimeBtWAttack;
-
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;
-
+    private Animator animator;
     SpriteRenderer sr;    
     //si esta en true, esta mirando a la derecha
     //si esta en false, esta mirando a la izquierda
@@ -19,6 +18,8 @@ public class playerAttack : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        animator.SetBool("isAttacking", false);
     }
 
     void Update()
@@ -27,6 +28,7 @@ public class playerAttack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                animator.SetBool("isAttacking", true);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
@@ -38,14 +40,17 @@ public class playerAttack : MonoBehaviour
                     {
                         enemiesToDamage[i].GetComponent<bossScript>().TakeDamage(damage);
                     }
-                    HitStop(.3f);
                 }
                 timeBtwAttack = 1;
             } 
+            else
+            {
+                animator.SetBool("isAttacking", false);
+            }
         }
         else if (timeBtwAttack > 0)
         {
-                timeBtwAttack -= Time.deltaTime;
+            timeBtwAttack -= Time.deltaTime;
         }
     }
 
@@ -53,17 +58,5 @@ public class playerAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
-    }
-
-    public void HitStop (float TimeStopped)
-    {
-        StartCoroutine(HitStopCoroutine(TimeStopped));
-    }
-
-    IEnumerator HitStopCoroutine (float TimeStopped)
-    {
-        Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime (TimeStopped);
-        Time.timeScale = 1f;
     }
 }
