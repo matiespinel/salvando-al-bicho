@@ -10513,7 +10513,7 @@ PrefabInstance:
     - target: {fileID: 5327719141509248605, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3
+      value: 1325
       objectReference: {fileID: 0}
     - target: {fileID: 5327719141509248605, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
@@ -11263,6 +11263,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1521533680}
     m_Modifications:
+    - target: {fileID: 4465043116304055796, guid: 3bd12d33aa6cf3843ab4b55a17658853,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4465043116304055796, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: m_Sprite
@@ -16064,7 +16069,7 @@ PrefabInstance:
     - target: {fileID: 4465043116304055796, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4465043116304055796, guid: 3bd12d33aa6cf3843ab4b55a17658853,
         type: 3}
