@@ -21,7 +21,7 @@ public class bossScript : MonoBehaviour
     {
         vidaBoss--;
         
-        animator.SetBool("isTilting", true);
+        animator.SetTrigger("isTilting");
         
         if (vidaBoss <= 0)
         {
@@ -33,8 +33,6 @@ public class bossScript : MonoBehaviour
         estadoTorre = true;
         admOleadas.ActivateAllEnemies();
         player.transform.position = new Vector2(410.9932f, -88.1f);
-
-        animator.SetBool("isilting", false);
 
     }
 }
