@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
             canJump = false;
             //banicio aca va la anim salto
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500f));
+            animator.SetBool("enSuelo", false);
         }
 
         if (timeBtwAttack <= 0)
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
         if (collision.transform.tag == "ground")
         {
             canJump = true;
+            animator.SetBool("enSuelo",true);
         }
     }
 }
