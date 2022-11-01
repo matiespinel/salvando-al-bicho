@@ -50,7 +50,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space") && canJump == true)
         {
             canJump = false;
-            //banicio aca va la anim salto
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500f));
             animator.SetBool("enSuelo", false);
         }
