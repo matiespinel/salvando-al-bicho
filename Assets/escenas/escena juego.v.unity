@@ -10434,7 +10434,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _health
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266124143}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d50a4c887e3ad947967da1cdeecd071, type: 3}
 --- !u!1001 &1266124142
@@ -14753,7 +14753,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _health
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266124143}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d50a4c887e3ad947967da1cdeecd071, type: 3}
 --- !u!1 &1886183532
