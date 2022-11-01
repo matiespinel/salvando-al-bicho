@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 66512950}
   m_Layer: 0
   m_Name: pasto y tierra (20)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6519,7 +6519,7 @@ GameObject:
   - component: {fileID: 879509135}
   m_Layer: 0
   m_Name: mini plataforma (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12798,7 +12798,7 @@ GameObject:
   - component: {fileID: 1597066634}
   m_Layer: 0
   m_Name: pasto y tierra (19)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14187,7 +14187,7 @@ GameObject:
   - component: {fileID: 1778312789}
   m_Layer: 0
   m_Name: pasto y tierra (18)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14844,7 +14844,7 @@ GameObject:
   - component: {fileID: 1895270162}
   m_Layer: 0
   m_Name: mini plataforma
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14970,7 +14970,7 @@ GameObject:
   - component: {fileID: 1911781421}
   m_Layer: 0
   m_Name: pasto y tierra (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
