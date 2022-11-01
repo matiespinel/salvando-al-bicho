@@ -61,13 +61,22 @@ public class PlayerController : MonoBehaviour
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-700f, 0));
                 timeBtwAttack = 1;
+                animator.SetBool("isDashing", true);
+            }
+            else
+            {
+                animator.SetBool("isDashing", false);
             }
             
             if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == true)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(700f, 0));
                 timeBtwAttack = 1;
-                //aca va animi dash
+                animator.SetBool("isDashing", true);
+            }
+            else
+            {
+                animator.SetBool("isDashing", false);
             }
         }
 
