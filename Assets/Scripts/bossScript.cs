@@ -10,9 +10,19 @@ public class bossScript : MonoBehaviour
     public GameObject laserTorre;
     bool estadoTorre = true;
 
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void TakeDamage(int damage)
     {
         vidaBoss--;
+        
+        animator.SetBool("isTilting", true);
+        
         if (vidaBoss <= 0)
         {
             Destroy(gameObject);
@@ -22,7 +32,9 @@ public class bossScript : MonoBehaviour
         laserTorre.SetActive(true);
         estadoTorre = true;
         admOleadas.ActivateAllEnemies();
-        player.transform.position = new Vector2(410.9932f, -88.1f);;
+        player.transform.position = new Vector2(410.9932f, -88.1f);
+
+        animator.SetBool("isilting", false);
 
     }
 }
