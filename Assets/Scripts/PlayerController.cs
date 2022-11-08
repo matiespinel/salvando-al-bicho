@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
         else if (timeBtwAttack > 0)
         {
-                timeBtwAttack -= Time.deltaTime;
+            timeBtwAttack -= Time.deltaTime;
         }
     }
 
