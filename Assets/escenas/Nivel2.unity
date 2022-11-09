@@ -724,6 +724,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 69562193}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
       propertyPath: playerHealth
       value: 3
       objectReference: {fileID: 0}
@@ -832,6 +837,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e0abd365a98974480e25c1ddfbe695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &69562193 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5327719141509248604, guid: 40e3e6fadd9cf524b861b76a005cae20,
+    type: 3}
+  m_PrefabInstance: {fileID: 69562190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &75063657
 GameObject:
   m_ObjectHideFlags: 0
