@@ -57,12 +57,13 @@ public class Health : MonoBehaviour
     public void ColorChange()
     {
         sr.color = Color.red;
+        StartCoroutine(PonerseRojo());
     }
 
     IEnumerator PonerseRojo()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        sr.color = Color.white;        
+        sr.color = Color.white;
     }
 
     internal void UpdateHealth()
