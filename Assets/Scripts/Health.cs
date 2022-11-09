@@ -14,6 +14,13 @@ public class Health : MonoBehaviour
     public Sprite fullHearts;
     public Sprite emptyHearts;
 
+    public SpriteRenderer sr;
+
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
 
@@ -45,6 +52,17 @@ public class Health : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    public void ColorChange()
+    {
+        sr.color = Color.red;
+    }
+
+    IEnumerator PonerseRojo()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        sr.color = Color.white;        
     }
 
     internal void UpdateHealth()
