@@ -18,11 +18,21 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
 
+    private AudioSource audioSource;
+
+    [SerializeField] private AudioClip dashear;
+    [SerializeField] private AudioClip saltar;
+    [SerializeField] private AudioClip golpear;
+    [SerializeField] private AudioClip recibirDaño;
+    [SerializeField] private AudioClip morir;
+    
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         startScale = transform.localScale;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -61,12 +71,14 @@ public class PlayerController : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-700f, 0));
                 timeBtwAttack = 1;
                 animator.SetBool("isDashing", true);
+                audioSource.PlayOneShot(dashear);
             }
             else if (Input.GetKeyDown(KeyCode.LeftShift) && mirandoDerecha == true)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(700f, 0));
                 timeBtwAttack = 1;
                 animator.SetBool("isDashing", true);
+                audioSource.PlayOneShot(dashear);
             }
             else
             {
