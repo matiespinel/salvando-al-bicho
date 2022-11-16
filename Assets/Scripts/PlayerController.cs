@@ -22,11 +22,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private AudioClip dashear;
     [SerializeField] private AudioClip saltar;
-    [SerializeField] private AudioClip golpear;
-    [SerializeField] private AudioClip recibirDaño;
-    [SerializeField] private AudioClip morir;
     
-
+    
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -62,6 +59,7 @@ public class PlayerController : MonoBehaviour
             canJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500f));
             animator.SetBool("enSuelo", false);
+            audioSource.PlayOneShot(saltar);
         }
 
         if (timeBtwAttack <= 0)

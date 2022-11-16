@@ -1548,6 +1548,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1770047560441668918, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
+      propertyPath: golpear
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fe3dab50f507544391ac8a2e7ed2069, type: 3}
+    - target: {fileID: 1770047560441668918, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
       propertyPath: attackRange
       value: 34.6
       objectReference: {fileID: 0}
@@ -1571,6 +1576,16 @@ PrefabInstance:
       propertyPath: sr
       value: 
       objectReference: {fileID: 635874251}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: gemir
+      value: 
+      objectReference: {fileID: 8300000, guid: 848fc383299b3f24eb973bad5757cd6d, type: 3}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: morir
+      value: 
+      objectReference: {fileID: 8300000, guid: 7793511d24b131c4a9784844f47c7541, type: 3}
     - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
       propertyPath: playerHealth

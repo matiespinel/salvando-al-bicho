@@ -8,6 +8,10 @@ public class Damage : MonoBehaviour
 
     [SerializeField] private Health _health;
 
+    private AudioSource audioSource;
+
+    [SerializeField] private AudioClip gemir;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -19,6 +23,7 @@ public class Damage : MonoBehaviour
         {
             _health.playerHealth = _health.playerHealth - damage;
             _health.ColorChange();
+            audioSource.PlayOneShot(gemir);
         }
     }
     

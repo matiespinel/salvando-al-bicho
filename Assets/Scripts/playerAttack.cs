@@ -15,11 +15,16 @@ public class playerAttack : MonoBehaviour
     //si esta en true, esta mirando a la derecha
     //si esta en false, esta mirando a la izquierda
 
+    private AudioSource audioSource;
+
+    [SerializeField] private AudioClip golpear;
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animator.SetBool("isAttacking", false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -30,6 +35,7 @@ public class playerAttack : MonoBehaviour
             {
                 //delay
                 animator.SetBool("isAttacking", true);
+                audioSource.PlayOneShot(golpear);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {

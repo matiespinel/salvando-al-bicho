@@ -16,9 +16,14 @@ public class Health : MonoBehaviour
 
     public SpriteRenderer sr;
 
+    private AudioSource audioSource;
+
+    [SerializeField] private AudioClip gemir;
+    [SerializeField] private AudioClip morir;
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -51,12 +56,14 @@ public class Health : MonoBehaviour
         if (playerHealth <= 0) 
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //audioSource.PlayOneShot(morir);
         }
     }
 
     public void ColorChange()
     {
         sr.color = Color.red;
+        audioSource.PlayOneShot(gemir);
         StartCoroutine(PonerseRojo());
     }
 
