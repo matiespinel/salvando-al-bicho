@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
 {
     public int playerHealth;
     public int numOfHearts;
-
+    public GameObject PlayerDeathCnvas; 
     public Image[] hearts;
     public Sprite fullHearts;
     public Sprite emptyHearts;
@@ -55,7 +55,8 @@ public class Health : MonoBehaviour
 
         if (playerHealth <= 0) 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            PlayerDeathCnvas.SetActive(true);
+           
             //audioSource.PlayOneShot(morir);
         }
     }

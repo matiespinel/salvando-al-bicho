@@ -11092,6 +11092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
+      propertyPath: PlayerDeathCnvas
+      value: 
+      objectReference: {fileID: 1726846258}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1627677746}
