@@ -714,6 +714,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1770047560441668918, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
+      propertyPath: golpear
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fe3dab50f507544391ac8a2e7ed2069, type: 3}
+    - target: {fileID: 1770047560441668918, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
       propertyPath: whatIsEnemies.m_Bits
       value: 128
       objectReference: {fileID: 0}
@@ -727,6 +732,16 @@ PrefabInstance:
       propertyPath: sr
       value: 
       objectReference: {fileID: 69562193}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: gemir
+      value: 
+      objectReference: {fileID: 8300000, guid: 848fc383299b3f24eb973bad5757cd6d, type: 3}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: morir
+      value: 
+      objectReference: {fileID: 8300000, guid: 7793511d24b131c4a9784844f47c7541, type: 3}
     - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
       propertyPath: playerHealth
@@ -812,6 +827,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5327719141509248606, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: saltar
+      value: 
+      objectReference: {fileID: 8300000, guid: 58b88ead53272ab4c94a9f9b61b505c9, type: 3}
+    - target: {fileID: 5327719141509248606, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: dashear
+      value: 
+      objectReference: {fileID: 8300000, guid: c74ba811fe65ccc41a3c1ad46fc17dff, type: 3}
     - target: {fileID: 5327719141509248606, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
       propertyPath: timeBtwAttack
@@ -4535,6 +4560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &373862850
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4897,6 +4923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &423974377
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5282,6 +5309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &459091975
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5895,6 +5923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &492513981
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15831,6 +15860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &1273841375
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25500,6 +25530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &1889265089
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26633,6 +26664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   _health: {fileID: 69562192}
+  gemir: {fileID: 0}
 --- !u!60 &2001591284
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -9,12 +9,14 @@ public class bossScript : MonoBehaviour
     int vidaBoss = 3; 
     public GameObject laserTorre;
     bool estadoTorre = true;
-
     private Animator animator;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip encenderTorre;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int damage)
@@ -31,6 +33,7 @@ public class bossScript : MonoBehaviour
 
         laserTorre.SetActive(true);
         estadoTorre = true;
+        audioSource.PlayOneShot(encenderTorre);
         admOleadas.ActivateAllEnemies();
         player.transform.position = new Vector2(410.9932f, -88.1f);
 

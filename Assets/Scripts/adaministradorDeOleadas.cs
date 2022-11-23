@@ -9,8 +9,8 @@ public class adaministradorDeOleadas : MonoBehaviour
     public int waveCount = 0;
     public int maxWaveCount = 3;
     public GameObject laserTorre;
-
-    
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip apagarTorre;
 
     public void ActivateAllEnemies()
     {
@@ -24,7 +24,7 @@ public class adaministradorDeOleadas : MonoBehaviour
     
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +35,7 @@ public class adaministradorDeOleadas : MonoBehaviour
             {
                 waveCount++;
                 laserTorre.SetActive(false);
+                audioSource.PlayOneShot(apagarTorre);
             }
             else 
             {
