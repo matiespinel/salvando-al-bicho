@@ -9,7 +9,8 @@ public class Health : MonoBehaviour
 {
     public int playerHealth;
     public int numOfHearts;
-    public GameObject PlayerDeathCnvas; 
+    public GameObject PlayerDeathCnvas;
+    public static bool GameIsPaused = false;
     public Image[] hearts;
     public Sprite fullHearts;
     public Sprite emptyHearts;
@@ -56,7 +57,8 @@ public class Health : MonoBehaviour
         if (playerHealth <= 0) 
         {
             PlayerDeathCnvas.SetActive(true);
-           
+            Time.timeScale = 0f;
+            GameIsPaused = true; 
             //audioSource.PlayOneShot(morir);
         }
     }
