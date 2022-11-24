@@ -9,5 +9,6 @@ public class Retry : MonoBehaviour
    public void REI ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        Time.timeScale = 1f;
     }
 }

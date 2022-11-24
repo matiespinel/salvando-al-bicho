@@ -10,13 +10,13 @@ public class Health : MonoBehaviour
     public int playerHealth;
     public int numOfHearts;
     public GameObject PlayerDeathCnvas;
-    public static bool GameIsPaused = false;
     public Image[] hearts;
     public Sprite fullHearts;
     public Sprite emptyHearts;
+    public static bool GameIsPaused = false; 
+    
 
     public SpriteRenderer sr;
-
     private AudioSource audioSource;
 
     [SerializeField] private AudioClip gemir;
@@ -61,8 +61,9 @@ public class Health : MonoBehaviour
             GameIsPaused = true; 
             //audioSource.PlayOneShot(morir);
         }
-    }
 
+       
+    }
     public void ColorChange()
     {
         sr.color = Color.red;
