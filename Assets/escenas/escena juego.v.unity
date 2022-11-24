@@ -15742,6 +15742,21 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 827887815953313714, guid: 4d50a4c887e3ad947967da1cdeecd071,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 827887815953313714, guid: 4d50a4c887e3ad947967da1cdeecd071,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 193.56787
+      objectReference: {fileID: 0}
+    - target: {fileID: 827887815953313714, guid: 4d50a4c887e3ad947967da1cdeecd071,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0.10876465
+      objectReference: {fileID: 0}
     - target: {fileID: 7776586501227411876, guid: 4d50a4c887e3ad947967da1cdeecd071,
         type: 3}
       propertyPath: m_Size.x
