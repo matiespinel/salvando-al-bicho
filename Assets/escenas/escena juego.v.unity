@@ -12142,7 +12142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472218685}
   - component: {fileID: 1472218684}
-  - component: {fileID: 1472218683}
+  - component: {fileID: 1472218686}
   m_Layer: 0
   m_Name: killporcaida
   m_TagString: Untagged
@@ -12150,18 +12150,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1472218683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472218682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473d341869eca8a4fbd6acbc534d705a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1472218684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12203,6 +12191,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472218686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472218682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec065e2f38b60640aeacd9c1e07280b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  _health: {fileID: 1266124143}
+  gemir: {fileID: 8300000, guid: 848fc383299b3f24eb973bad5757cd6d, type: 3}
 --- !u!1 &1490122224
 GameObject:
   m_ObjectHideFlags: 0

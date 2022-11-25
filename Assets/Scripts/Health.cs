@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
             GameIsPaused = true; 
             //audioSource.PlayOneShot(morir);
         }
+        
 
        
     }
