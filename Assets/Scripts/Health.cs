@@ -62,9 +62,18 @@ public class Health : MonoBehaviour
             //audioSource.PlayOneShot(morir);
         }
         
-
-       
     }
+       public void REI ()
+    {
+      
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        if ( playerHealth >= 1)
+        {
+            Time.timeScale = 1f;
+        }
+        
+    }
+    
     public void ColorChange()
     {
         sr.color = Color.red;
