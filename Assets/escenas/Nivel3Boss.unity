@@ -44666,18 +44666,18 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732170289}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 84df99062ce9d5546aa7a1e50a64dfaa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb793fb9f48dee246b106a1dabbb37de, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.355
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 28
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
