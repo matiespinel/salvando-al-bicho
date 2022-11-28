@@ -1588,6 +1588,11 @@ PrefabInstance:
       objectReference: {fileID: 635874251}
     - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
+      propertyPath: jon
+      value: 
+      objectReference: {fileID: 635874244}
+    - target: {fileID: 5327719141509248601, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
       propertyPath: gemir
       value: 
       objectReference: {fileID: 8300000, guid: 848fc383299b3f24eb973bad5757cd6d, type: 3}

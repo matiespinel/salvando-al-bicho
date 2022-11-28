@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
+    public GameObject jon;
     public int playerHealth;
     public int numOfHearts;
     public GameObject PlayerDeathCnvas;
     public Image[] hearts;
     public Sprite fullHearts;
     public Sprite emptyHearts;
-    public static bool GameIsPaused = false; 
+    public static bool GameIsPaused = false;
+    Vector2 posjon;
     
 
     public SpriteRenderer sr;
@@ -24,7 +26,9 @@ public class Health : MonoBehaviour
 
     void Start()
     {
+        jon = gameObject;
         audioSource = GetComponent<AudioSource>();
+        posjon = jon.transform.position;
     }
 
     void Update()
@@ -65,13 +69,11 @@ public class Health : MonoBehaviour
     }
        public void REI ()
     {
-      
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
-        if ( playerHealth >= 1)
-        {
-            Time.timeScale = 1f;
-        }
-        
+        jon.transform.position = posjon;
+        playerHealth = 3;
+        Time.timeScale = 1f;
+        PlayerDeathCnvas.SetActive(false);
+        GameIsPaused = false; 
     }
     
     public void ColorChange()
