@@ -7,7 +7,7 @@ public class enemyDeath : MonoBehaviour
     public bool isDead = false;
 
     public GameObject cuerpoMuerto;
-
+    public GameObject cuerpoVivo;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class enemyDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        cuerpoMuerto.transform.position = cuerpoVivo.transform.position;
     }
 
     public void TakeDamage(int damage)
