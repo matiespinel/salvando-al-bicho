@@ -3782,7 +3782,7 @@ GameObject:
   - component: {fileID: 127413567}
   m_Layer: 0
   m_Name: tumbalacasamami (3)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13215,7 +13215,7 @@ GameObject:
   - component: {fileID: 464370238}
   m_Layer: 0
   m_Name: tumbalacasamami (5)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13383,7 +13383,7 @@ GameObject:
   - component: {fileID: 466690080}
   m_Layer: 0
   m_Name: tumbalacasamami (2)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24096,7 +24096,7 @@ GameObject:
   - component: {fileID: 873797659}
   m_Layer: 0
   m_Name: tumbalacasamami (6)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27510,7 +27510,7 @@ GameObject:
   - component: {fileID: 975036464}
   m_Layer: 0
   m_Name: tumbalacasamami (4)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32482,7 +32482,7 @@ GameObject:
   - component: {fileID: 1187333882}
   m_Layer: 0
   m_Name: tumbalacasamami
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34080,6 +34080,14 @@ MonoBehaviour:
   maxWaveCount: 3
   laserTorre: {fileID: 414854377}
   apagarTorre: {fileID: 8300000, guid: 9179717df07eb13438da964c138637d6, type: 3}
+  tumba: {fileID: 1187333881}
+  tumba2: {fileID: 1843072266}
+  tumba3: {fileID: 127413566}
+  tumba4: {fileID: 975036463}
+  tumba5: {fileID: 464370237}
+  tumba6: {fileID: 873797658}
+  tumba7: {fileID: 1923736112}
+  tumba8: {fileID: 466690079}
 --- !u!4 &1260196018
 Transform:
   m_ObjectHideFlags: 0
@@ -48716,7 +48724,7 @@ GameObject:
   - component: {fileID: 1843072267}
   m_Layer: 0
   m_Name: tumbalacasamami (1)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51097,7 +51105,7 @@ GameObject:
   - component: {fileID: 1923736113}
   m_Layer: 0
   m_Name: tumbalacasamami (7)
-  m_TagString: Untagged
+  m_TagString: tumba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
