@@ -6,6 +6,8 @@ public class enemyDeath : MonoBehaviour
 {
     public bool isDead = false;
 
+    public GameObject cuerpoMuerto;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class enemyDeath : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        enemigoMuerto.SetActive(true);
         gameObject.SetActive(false);
         gameObject.GetComponent<enemyDeath>().isDead = true;
     }
