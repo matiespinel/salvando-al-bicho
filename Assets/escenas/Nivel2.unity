@@ -2715,10 +2715,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184432725}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c694624ceb794a54b9ab0a1fe9037725, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cbfcd47a67b4e974aa7d05e88bef061c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.146
   m_Pitch: 1
@@ -23638,7 +23638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -157}
+  m_AnchoredPosition: {x: -252, y: -211}
   m_SizeDelta: {x: 120.0816, y: 23.3605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621314295
@@ -23690,8 +23690,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 7
+  m_fontSizeBase: 7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
