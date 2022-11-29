@@ -10488,6 +10488,11 @@ PrefabInstance:
       propertyPath: golpear
       value: 
       objectReference: {fileID: 8300000, guid: 9fe3dab50f507544391ac8a2e7ed2069, type: 3}
+    - target: {fileID: 1770047560441668918, guid: 40e3e6fadd9cf524b861b76a005cae20,
+        type: 3}
+      propertyPath: whatIsEnemies.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 5327719141509248579, guid: 40e3e6fadd9cf524b861b76a005cae20,
         type: 3}
       propertyPath: m_Name
