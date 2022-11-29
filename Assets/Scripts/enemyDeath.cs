@@ -11,7 +11,7 @@ public class enemyDeath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cuerpoMuerto.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class enemyDeath : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        enemigoMuerto.SetActive(true);
+        cuerpoMuerto.SetActive(true);
         gameObject.SetActive(false);
         gameObject.GetComponent<enemyDeath>().isDead = true;
     }
